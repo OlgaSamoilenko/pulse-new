@@ -86,12 +86,69 @@
 
     </div>
   </div>
-  <main></main>
+  <main>
+    <section class="advantages">
+      <div class="container">
+        <h3 class="advantages__subtitle">НАШИ ПРЕИМУЩЕСТВА</h3>
+      <div class="advantage__wrapper flex">
+        <div class="advantage__item flex">
+          <img class="advantages__item_img" src="icon/main/cup.png" alt="">
+          <div class="advantage__item_subtitle">Делимся опытом</div>
+          <div class="advantage__item_text">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
+        </div>
+          <div class="advantage__item flex">
+          <img class="advantages__item_img" src="icon/main/heart.png" alt="">
+          <div class="advantage__item_subtitle">Заботимся о здоровье</div>
+          <div class="advantage__item_text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
+        </div>
+          <div class="advantage__item flex">
+          <img class="advantages__item_img" src="icon/main/shoe.png" alt="">
+          <div class="advantage__item_subtitle">Учим бегать</div>
+          <div class="advantage__item_text">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России <span class="advantage__item_text-red">- I LOVE RUNNING.</span></div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="consultation">
+    <div class="container">
+      <div class="consultation__header">Получите бесплатную консультацию по подбору пульсометра </div>
+      <div class="consultation__subheader">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</div>
+      <form class="flex" action="/submit-form" method="POST" enctype="multipart/form-data" autocomplete="off" >
+        <input type="text" id="name" name="Ваше имя" placeholder="Ваше имя" required>
+        <input class="mask-phone" type="text" id="phone" name="phone" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7(XXX)XXX-XX-XX" required>
+       <input type="text" class="mask-phone form-control" placeholder="Номер телефона">
+        <input type="email" id="user-email" name="Ваш E-mail" placeholder="Ваш E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <input class="btn" type="submit" value="заказать кОНСУЛЬТАЦИЮ">
+      </form>
+    </div>
+    </section>    
+    <section class="slider-section">
+      <div class="container">
+        <div class="slider">
+         <div class="slides">
+           <div class="slide">
+            <img src="img/slider/slider №1.png" alt="slider-1">
+          </div>
+            <div class="slider__item">
+            <img src="img/slider/slider №2.png" alt="slider-2">
+          </div>
+            <div class="slider__item">
+            <img src="img/slider/slider №3.png" alt="slider-3">
+          </div>
+         </div>
+
+        <button class="prev">&#10094;</button> <!-- Кнопка «Назад» -->
+        <button class="next">&#10095;</button> <!-- Кнопка «Вперёд» -->
+        </div>
+      </div>
+    </section>
+  </main>
   <footer></footer>
   
-  <script src="js/script.js">
-    
+  <script src="js/script.js">  
   </script>
+  
+
     
 </body>
 </html>
